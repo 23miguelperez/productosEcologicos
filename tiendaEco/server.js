@@ -170,3 +170,6 @@ app.post('/factura', (req, res) => {
 app.listen(PORT, () => {
     console.log(`🚀 Servidor Express encendido en el puerto ${PORT}...`);
 });
+
+// NUEVO: Exportamos la app para que Vercel pueda usarla en modo Serverless
+module.exports = app;
